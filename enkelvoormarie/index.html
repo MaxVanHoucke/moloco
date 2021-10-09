@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>moloco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../index.js"></script>
+    <style>
+        body {
+            margin: 0;
+            color: #19486A;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .scroll-container {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+
+        .snap {
+            height: 100vh;
+            scroll-snap-align: center;
+            display: flex;
+        }
+
+        .part {
+            height: 100vh;
+            width: 40vw;
+        }
+
+        .sticky {
+            /*position: -webkit-sticky;*/
+            position: absolute;
+            top: 0;
+        }
+
+        img.ball {
+            height: 72px;
+            margin-bottom: -1px;
+        }
+
+        img.half {
+            height: 102px;
+            margin-bottom: -1px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+<div id="animation" style="position: fixed; display: flex; justify-content: center; right: 25vw; top: 26vh">
+    <img src="../img/elements/1.png" class="sticky ball" style="top: 100px; height: 300px" data-h="100">
+    <img src="../img/elements/2.png" class="sticky half" style="top: 172px" data-h="172">
+    <img src="../img/elements/3.png" class="sticky half" style="top: 274px" data-h="274">
+    <img src="../img/elements/4.png" class="sticky half" style="top: 376px" data-h="376">
+    <img src="../img/elements/5.png" class="sticky ball" style="top: 478px" data-h="478">
+    <img src="../img/elements/6.png" class="sticky ball" style="top: 550px" data-h="550">
+</div>
+
+<div id="fullpage">
+    <section class="section" style="position: relative">
+        <div style="display: flex; width: 100%; margin-top: 2rem; position: absolute; align-items: center; justify-content: space-between; flex-direction: row">
+            <img src="../img/together.png" style="height: 60px; padding-left: 4rem">
+            <div style="display: flex;align-items: center; padding-right: 4rem">
+                <img src="../img/logo.png" style="height: 30px;">
+<!--                <img src="../img/hamburger.png" style="height: 30px; padding-left: 30px">-->
+            </div>
+        </div>
+        <div class="part" style="padding-left: 4rem; display: flex; justify-content: center; flex-direction: column">
+            <h1 style="font-size: 60px">
+                Mobility, <br>Locality, <br> Community.
+            </h1>
+            <h3 style="margin: 0">One woman, one man, based in Berlin.</h3>
+        </div>
+    </section>
+    <section class="section">
+        <div class="part" style="padding-left: 4rem; display: flex; justify-content: center; flex-direction: column">
+            <h1 style="font-size: 60px; margin-bottom: 10px">
+                Roger Kesteloot
+            </h1>
+            <h3 style="margin: 0">has had a career in both media and mobility. From
+2010 until the end of 2020 he has been the CEO of
+Flemish public transport operator De Lijn (8.000
+employees). His expertise includes sustainable
+mobility, corporate strategy, organizational change.
+He has been a member of both the Policy Board and
+the Sustainable Development Committee of the
+Union Internationale des Transports Publics, by
+which he has been nominated ‘Honorary
+Ambassador’.</h3>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="part" style="padding-left: 4rem; display: flex; justify-content: center; flex-direction: column">
+            <h1 style="font-size: 60px; margin-bottom: 10px"">
+                Corry Hancké
+            </h1>
+            <h3 style="margin: 0">is an experienced journalist, active in printed,
+audiovisual and online media. She has reported
+from several conflict areas such as Afghanistan and
+the Ukraine. After having been a newspaper
+correspondent in Moscow, she currently is the
+Berlin correspondent for the Belgian quality
+newspaper ‘de Standaard ’.</h3>
+        </div>
+    </section>
+    <section class="section">
+        <div class="part" style="padding-left: 4rem; display: flex; justify-content: center; flex-direction: column">
+            <h1 style="font-size: 60px; margin-bottom: 10px">
+                consultancy
+            </h1>
+            <h3 style="margin: 0">In consultancy moloco aims - in close cooperation
+with its customers - at providing strategic advice on
+issues such as
+                <ul>
+                    <li>Defining and implementing corporate strategy</li>
+                    <li>Stakeholder management and communication</li>
+                    <li>Corporate Social Responsibility</li>
+                    <li>C-level approach to organizational change</li>
+                    <li>Sustainable development</li>
+                </ul></h3>
+        </div>
+    </section>
+</div>
+
+<script>
+    document.addEventListener('scroll', function(e) {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        const images = document.querySelectorAll('#animation img');
+        // console.log(winScroll)
+        const windowHeight = window.innerHeight;
+        const ballHeight = Math.max(300 - winScroll, 72);
+        images[0].style.height = ballHeight.toString() + 'px';
+        for (let i = 0; i < images.length; i++) {
+            const element = images[i];
+            const elementTop = parseInt(element.dataset.h);
+            const newTop = Math.max(i * windowHeight + elementTop - winScroll, elementTop).toString() + 'px'
+            console.log(newTop);
+            element.style.top = newTop;
+        }
+    });
+    new fullpage('#fullpage', {
+        scrollBar: true,
+        autoScrolling: true,
+    });
+</script>
+
+</body>
+</html>
