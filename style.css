@@ -7,7 +7,7 @@ body {
 .text-section {
     height: 100vh;
     width: 40vw;
-    padding-left: 6rem;
+    padding-left: 12rem;
     display: flex;
     justify-content: center;
     flex-direction: column
@@ -32,7 +32,7 @@ img.half {
 #header {
     display: flex;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 6rem;
     position: absolute;
     align-items: center;
     justify-content: space-between;
