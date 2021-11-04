@@ -29,10 +29,10 @@
 </div>
 
 <div id="animation-mobile" class="moloco-animation" style="left: 0;">
-    <img src="../img/elements/1.png" alt="Animation part" class="ball">
-    <img src="../img/elements/2_mobile.png" alt="Animation part" class="half">
-    <img src="../img/elements/3_mobile.png" alt="Animation part" class="half">
-    <img src="../img/elements/4_mobile.png" alt="Animation part" class="half">
+    <img src="../img/elements/1.png" alt="Animation part" class="ball" onclick="onClickImg(1)" style="z-index: 2">
+    <img src="../img/elements/2_mobile.png" alt="Animation part" class="half" onclick="onClickImg(2)">
+    <img src="../img/elements/3_mobile.png" alt="Animation part" class="half" onclick="onClickImg(3)">
+    <img src="../img/elements/4_mobile.png" alt="Animation part" class="half" onclick="onClickImg(4)">
     <img src="../img/elements/5.png" alt="Animation part" class="ball">
 <!--    <img src="../img/elements/6.png" alt="Animation part" class="ball">-->
 </div>
@@ -125,11 +125,11 @@
             </h1>
             <h3 style="margin-bottom: 15px">info@moloco.eu</h3>
             <form action="https://formcarry.com/s/40RApvcd0jP" method="POST" accept-charset="UTF-8" >
-                <input type="text" name="name" placeholder="name">
-                <input type="email" name="email" placeholder="email"><!-- use this to reply visitors and prevent spam via akismet -->
-                <textarea type="text" name="message" placeholder="message"></textarea>
-                <input type="hidden" name="_gotcha"><!-- use this to prevent spam -->
-                <h3 style="width: 80%; margin-top: 15px">
+                <input class="moloco-input" type="text" name="name" placeholder="name">
+                <input class="moloco-input" type="email" name="email" placeholder="email"><!-- use this to reply visitors and prevent spam via akismet -->
+                <textarea class="moloco-input" type="text" name="message" placeholder="message"></textarea>
+                <input class="moloco-input" type="hidden" name="_gotcha"><!-- use this to prevent spam -->
+                <h3 style="margin-top: 15px">
                     moloco UG<button style="float: right; color: #EF5C5B" type="submit">send</button><br>
                     Am Friedrichshain 25<br>
                     10407 Berlin<br>

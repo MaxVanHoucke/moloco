@@ -7,6 +7,16 @@ if (isDesktop) {
 }
 
 
+function onClickImg(i) {
+    console.log('click')
+    window.scrollTo({
+      top: i * window.innerHeight,
+      left: 0,
+      behavior: 'smooth'
+    });
+}
+
+
 function onScroll() {
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     const windowHeight = window.innerHeight;

@@ -64,7 +64,6 @@ input[type='text'], [type='email'], select, textarea {
     letter-spacing: 1px;
 	margin: 0 0 0.5em 0;
 	padding: 0.5em;
-	width: 80%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -75,6 +74,10 @@ input[type='text'], [type='email'], select, textarea {
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+}
+
+.moloco-input, form h3 {
+    width: 100%;
 }
 
 input[type='text']:focus, [type='email']:focus, textarea:focus {
@@ -164,6 +167,10 @@ button {
 
     h3 {
         font-size: 1.5em;
+    }
+
+    .moloco-input, form h3 {
+        width: 80%;
     }
 
 }
