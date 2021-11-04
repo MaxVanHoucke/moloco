@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css"
           integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 </head>
 <body>
 
@@ -29,7 +31,7 @@
 </div>
 
 <div id="animation-mobile" class="moloco-animation" style="left: 0;">
-    <img src="../img/elements/1.png" alt="Animation part" class="ball" onclick="onClickImg(1)" style="z-index: 2">
+    <img src="../img/elements/1.png" alt="Animation part" class="ball" onclick="onClickImg(1)">
     <img src="../img/elements/2_mobile.png" alt="Animation part" class="half" onclick="onClickImg(2)">
     <img src="../img/elements/3_mobile.png" alt="Animation part" class="half" onclick="onClickImg(3)">
     <img src="../img/elements/4_mobile.png" alt="Animation part" class="half" onclick="onClickImg(4)">
@@ -38,7 +40,7 @@
 </div>
 
 <div id="fullpage">
-    <section class="section" style="position: relative">
+    <section class="section">
         <div id="header">
             <img src="../img/together.png" alt="Logo 2" style="height: 60px; padding-left: 6rem">
             <div style="display: flex; align-items: center; padding-right: 6rem">
@@ -115,7 +117,6 @@
                     <li>Sustainable development</li>
                 </ul>
             </h3>
-
         </div>
     </section>
     <section class="section">
