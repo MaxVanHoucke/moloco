@@ -17,14 +17,14 @@ h3 {
 
 .text-section {
     height: 100vh;
-    width: 40vw;
-    padding-left: 6rem;
+    width: 80vw;
+    padding-left: 10vw;
     display: flex;
     justify-content: center;
     flex-direction: column
 }
 
-#animation img {
+.moloco-animation img {
     position: absolute;
     top: 7000px;
 }
@@ -37,17 +37,6 @@ img.ball {
 img.half {
     height: 102px;
     margin-bottom: -1px;
-}
-
-
-#header {
-    display: flex;
-    width: 100%;
-    margin-top: 5rem;
-    position: absolute;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row
 }
 
 
@@ -96,4 +85,69 @@ button {
     padding:0;
     cursor: pointer;
 }
+
+
+.moloco-animation {
+    position: fixed;
+    justify-content: center;
+}
+
+#animation-mobile {
+    display: flex;
+    background-color: white;
+    height: 102px;
+    width: 100vw;
+    bottom: 0;
+}
+
+#animation {
+    display: none;
+}
+
+#header-mobile {
+    display: flex;
+    width: 100vw;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#header {
+    display: none;
+}
+
+@media (min-width:1000px) {
+
+    #animation-mobile {
+        display: none;
+    }
+
+    #animation {
+        display: flex;
+    }
+
+    #header {
+        display: flex;
+        width: 100%;
+        margin-top: 5rem;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row
+    }
+
+    #header-mobile {
+        display: none;
+    }
+
+    .text-section {
+        height: 100vh;
+        width: 40vw;
+        padding-left: 6rem;
+    }
+
+}
+
+
 
