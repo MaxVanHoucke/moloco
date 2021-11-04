@@ -10,12 +10,13 @@ if (isDesktop) {
 
 
 function onClickImg(i) {
-    console.log('click')
-    window.scrollTo({
-      top: i * document.getElementById('home-text').clientHeight,
-      left: 0,
-      behavior: 'smooth'
-    });
+    const sections = document.querySelectorAll('.text-section');
+    sections[i].scrollIntoView({behavior: 'smooth'});
+    // window.scrollTo({
+    //   top: i * document.getElementById('home-text').clientHeight,
+    //   left: 0,
+    //   behavior: 'smooth'
+    // });
 }
 
 
