@@ -125,6 +125,7 @@ button {
     display: flex;
     width: 100vw;
     margin-top: 1rem;
+    position: absolute;
     align-items: center;
     justify-content: center;
     flex-direction: row;
