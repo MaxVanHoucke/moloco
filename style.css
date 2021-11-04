@@ -5,14 +5,19 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 4em;
     margin-bottom: 10px;
 }
 
+h5 {
+    font-size: 2.2em;
+}
+
 h3 {
-    font-size: 22px;
+    font-size: 2.5em;
     margin: 0;
     font-weight: 500;
+    line-height: 1.1;
 }
 
 .text-section {
@@ -95,7 +100,7 @@ button {
 #animation-mobile {
     display: flex;
     background-color: white;
-    height: 102px;
+    height: 122px;
     width: 100vw;
     bottom: 0;
 }
@@ -145,6 +150,18 @@ button {
         height: 100vh;
         width: 40vw;
         padding-left: 6rem;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h5 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
     }
 
 }

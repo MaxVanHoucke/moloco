@@ -45,7 +45,7 @@ function onScroll() {
             }
             animationHeight += element.clientHeight;
         } else {
-            element.style.top = ((102 - element.clientHeight) / 2).toString() + 'px';
+            element.style.top = ((122 - element.clientHeight) / 2).toString() + 'px';
             if (i === 0) {
                 // Needs a drawing to make sense
                 element.style.left = Math.min(startBallRight, startRight + windowWidth - Math.min(windowWidth, Math.floor(windowWidth * (winScroll / windowHeight)))).toString() + 'px';
