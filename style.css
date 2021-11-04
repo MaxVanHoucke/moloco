@@ -14,7 +14,7 @@ h5 {
 }
 
 h3 {
-    /*font-size: 2.5em;*/
+    font-size: 1.2em;
     margin: 0;
     font-weight: 500;
     line-height: 1.1;
@@ -28,9 +28,7 @@ h5 {
     font-size: 1.2em;
 }
 
-h3 {
-    font-size: 1.5em;
-}
+
 
 .text-section {
     height: 100vh;
@@ -111,7 +109,6 @@ button {
 
 #animation-mobile {
     display: flex;
-    background-color: white;
     height: 122px;
     width: 100vw;
     bottom: 0;
@@ -165,7 +162,9 @@ button {
         padding-left: 6rem;
     }
 
-
+    h3 {
+        font-size: 1.5em;
+    }
 
 }
 
