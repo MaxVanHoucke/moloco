@@ -1,4 +1,6 @@
 const isDesktop = window.matchMedia("(min-width: 1000px)").matches;
+
+
 if (isDesktop) {
     new fullpage('#fullpage', {
         scrollBar: true,
@@ -10,7 +12,7 @@ if (isDesktop) {
 function onClickImg(i) {
     console.log('click')
     window.scrollTo({
-      top: i * window.innerHeight,
+      top: i * document.getElementById('home-text').clientHeight,
       left: 0,
       behavior: 'smooth'
     });
