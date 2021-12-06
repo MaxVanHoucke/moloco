@@ -3,7 +3,7 @@ body {
     margin: 0;
     color: #19486A;
     font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
+    padding: 0; overflow-x:hidden;
 }
 
 a {
@@ -116,7 +116,7 @@ button {
 .moloco-animation {
     position: fixed;
     justify-content: center;
-    z-index: 0;
+    z-index: 3;
 }
 
 #animation-mobile {
@@ -148,7 +148,21 @@ button {
     position: relative;
 }
 
+#privacy {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    left: 0;
+    bottom: 135px;
+}
+
 @media (min-width:1200px) {
+
+    #privacy {
+        text-align: center;
+        width: 100%;
+        bottom: 20px;
+    }
 
     #animation-mobile {
         display: none;
