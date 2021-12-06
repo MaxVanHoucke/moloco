@@ -1,4 +1,4 @@
-const isDesktop = window.matchMedia("(min-width: 1000px)").matches;
+const isDesktop = window.matchMedia("(min-width: 1200px)").matches;
 
 
 if (isDesktop) {
