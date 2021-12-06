@@ -74,4 +74,4 @@ function onScroll() {
  * Animation
  */
 document.addEventListener('scroll', onScroll);
-onScroll();
+window.onload = onScroll;
