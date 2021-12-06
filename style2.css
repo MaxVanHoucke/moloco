@@ -193,15 +193,15 @@ button {
         padding-bottom: 0;
     }
 
-    h1 {
-        font-size: 3em;
-    }
-    h3 {
-        font-size: 1.5em;
-    }
-    h5 {
-        font-size: 1.2em;
-    }
+    /*h1 {*/
+    /*    font-size: 3em;*/
+    /*}*/
+    /*h3 {*/
+    /*    font-size: 1.5em;*/
+    /*}*/
+    /*h5 {*/
+    /*    font-size: 1.2em;*/
+    /*}*/
 
     .moloco-input, form h3 {
         width: 80%;
