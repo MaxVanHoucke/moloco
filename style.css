@@ -17,18 +17,18 @@ a {
 
 h1 {
     margin-bottom: 10px;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin: 0;
     font-weight: 500;
     line-height: 1.1;
 }
 
 h5 {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .background-image {
@@ -193,8 +193,14 @@ button {
         padding-bottom: 0;
     }
 
+    h1 {
+        font-size: 3em;
+    }
     h3 {
         font-size: 1.5em;
+    }
+    h5 {
+        font-size: 1.2em;
     }
 
     .moloco-input, form h3 {
