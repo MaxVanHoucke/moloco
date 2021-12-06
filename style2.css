@@ -158,10 +158,6 @@ button {
 
 @media (min-width:1200px) {
 
-    .background-image {
-        z-index: 5;
-    }
-
     #privacy {
         text-align: center;
         width: 100%;
