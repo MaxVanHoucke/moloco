@@ -177,8 +177,8 @@ button {
     }
 
     #home-text {
-        height: calc(100vh - 122px);
-        padding-bottom: 122px;
+        height: 100vh;
+        padding-bottom: 0;
     }
 
     #privacy {
