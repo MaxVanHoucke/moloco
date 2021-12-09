@@ -176,6 +176,11 @@ button {
         z-index: 5;
     }
 
+    #home-text {
+        height: calc(100vh - 122px);
+        padding-bottom: 122px;
+    }
+
     #privacy {
         text-align: center;
         width: 100%;
