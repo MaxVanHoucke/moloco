@@ -1,5 +1,5 @@
 body {
-    font-size: 16px;
+    font-size: 14px;
     margin: 0;
     color: #19486A;
     font-family: 'Montserrat', sans-serif;
@@ -46,6 +46,19 @@ h5 {
     justify-content: center;
     flex-direction: column;
     padding-bottom: 122px;
+}
+
+
+#home-text {
+    height: calc(100vh - 60px);
+    padding-bottom: 60px;
+}
+
+
+@media (min-height:650px) {
+    body {
+        font-size: 16px;
+    }
 }
 
 .moloco-animation img {
@@ -197,16 +210,6 @@ button {
         padding-left: 10vw;
         padding-bottom: 0;
     }
-
-    /*h1 {*/
-    /*    font-size: 3em;*/
-    /*}*/
-    /*h3 {*/
-    /*    font-size: 1.5em;*/
-    /*}*/
-    /*h5 {*/
-    /*    font-size: 1.2em;*/
-    /*}*/
 
     .moloco-input, form h3 {
         width: 80%;
