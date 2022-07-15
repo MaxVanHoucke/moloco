@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
             integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -125,9 +127,12 @@
             <h3 style="margin-bottom: 15px">info@moloco.eu</h3>
             <form action="https://formcarry.com/s/40RApvcd0jP" method="POST" accept-charset="UTF-8" >
                 <input class="moloco-input" type="text" name="name" placeholder="name">
-                <input class="moloco-input" type="email" name="email" placeholder="email"><!-- use this to reply visitors and prevent spam via akismet -->
+                <input class="moloco-input" type="email" name="email" placeholder="email" onchange="document.getElementById('captcha').style.display = 'block'"><!-- use this to reply visitors and prevent spam via akismet -->
                 <textarea class="moloco-input" type="text" name="message" placeholder="message"></textarea>
                 <input class="moloco-input" type="hidden" name="_gotcha"><!-- use this to prevent spam -->
+                <div id="captcha" style="display: none">
+                    <div style="margin: 20px 0" class="g-recaptcha" data-sitekey="6LfFmvMgAAAAAFjuAuz2Cs2L5VWqmKkdg63-y8pn"></div>
+                </div>
                 <h3 style="margin-top: 15px">
                     moloco UG<button style="float: right; color: #EF5C5B" type="submit">send</button><br>
                     Am Friedrichshain 25<br>
